@@ -1,34 +1,74 @@
+header {
+    text-align: center;
+    font-family: fantasy;
 
-  body {background-color: rgb(233, 190, 233);
-  font-family: Helvetica;
-  text-align: center;}
+}
+body {
+    background-color: rgb(233, 190, 233);
+    font-family: Helvetica;
+    text-align: center;
+}
 
-  h1 {color: grey;
+
+h1 {
+    color: grey;
     font-style: bold;
     font-family: monospace;
     font-size: 40px;
+}
+
+
+.containerList {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  .list label {
+    margin-bottom: 10px;
+  }
+  
+  .list button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
   }
 
-textarea {background-color: rgb(rgb(132, 125, 125));
+textarea[name="user-input"] {
+    background-color: rgb(rgb(132, 125, 125));
     font-family: verdana;
     text-align: center;
-    height:400px;
+    height: 400px;
     width: 600px;
 }
-    button {background-color: black;
-    color:honeydew;
+
+#reset-button {
+    background-color: black;
+    color: honeydew;
     width: 60px;
     height: 40px;
     text-align: center;
     border-radius: 10px;
-    
+
 }
 
 
-  <script src="index.js" type="module"></script>
-</body>
- 
-
-    
-
-</html>
+footer {
+    text-align: right;
+}
