@@ -15,15 +15,15 @@ const result= textarea.value;
 document.querySelector('.list1').innerHTML= "caracteres"+ analyzer.getCharacterCount(result);
 
 //caracteres sin espacio
-list list2[1].innerHTML="caracteres sin espacio"+ analyzer.getCharacterCountExcludingSpaces(textarea,value);
+list2[1].innerHTML="caracteres sin espacio"+ analyzer.getCharacterCountExcludingSpaces(result);
 //contador palabras
-list list3[2].innerHTML="palabras"+ analyzer.getWordCount(textarea,value);
+list3[2].innerHTML="palabras"+ analyzer.getWordCount(result);
 //contador numeros
-list list4[3].innerHTML="números"+ analyzer.getNumberCount(textarea,value);
+list4[3].innerHTML="números"+ analyzer.getNumberCount(result);
 //contador suma numeros
-list list5[4].innerHTML="suma números"+ analyzer.getNumberSum(textarea,value);
+list5[4].innerHTML="suma números"+ analyzer.getNumberSum(result);
 //longitud promedio palabras
-list list6[5].innerHTML="promedio longitud"+ analyzer.getAverageWordLength(textarea,value);
+list6[5].innerHTML="promedio longitud"+ analyzer.getAverageWordLength(result);
 ),}
 
 //boton reset
@@ -32,4 +32,4 @@ btnReset.addEventListener("click",function(){
   textBox.value="";
 });
 
-//deberian borrarse todos los campos de parametros?
+
