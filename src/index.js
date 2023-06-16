@@ -6,6 +6,7 @@ import analyzer from './analyzer.js';
 const textarea = document.querySelector('textarea[name="user-input"]');
 const lista = document.querySelectorAll('li')
 textarea.addEventListener('keyup', function () {
+  
  
 
   //contar caracteres
@@ -31,6 +32,7 @@ const btnReset = document.getElementById('reset-button');
 btnReset.addEventListener('click', () => {
     
   textarea.value = '';
+ 
 });
 
 
