@@ -1,14 +1,12 @@
 import analyzer from './analyzer.js';
 
-//const userText = document.querySelector('li[name="textContent"]')
-
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
 
 //actualizar parametros del texto
 const textarea = document.querySelector('textarea[name="user-input"]');
 const lista = document.querySelectorAll('li')
 textarea.addEventListener('keyup', function () {
-  const result = textarea.value;
+ 
 
   //contar caracteres
   //list list1[0].innerHTML="caracteres"+ analyzer.getCharacterCount(textarea,value);
@@ -17,15 +15,15 @@ textarea.addEventListener('keyup', function () {
 
   lista[0].innerHTML="caracteres "+ analyzer.getCharacterCount(textarea.value);
   //caracteres sin espacio
-  lista[1].innerHTML = "caracteres sin espacio " + analyzer.getCharacterCountExcludingSpaces(result);
+  lista[1].innerHTML = "caracteres sin espacio " + analyzer.getCharacterCountExcludingSpaces(textarea.value);
   //contador palabras
-  lista[2].innerHTML = "palabras " + analyzer.getWordCount(result);
+  lista[2].innerHTML = "palabras " + analyzer.getWordCount(textarea.value);
   //contador numeros
-  lista[3].innerHTML = "números " + analyzer.getNumberCount(result);
+  lista[3].innerHTML = "números " + analyzer.getNumberCount(textarea.value);
   //contador suma numeros
-  lista[4].innerHTML = "suma números " + analyzer.getNumberSum(result);
+  lista[4].innerHTML = "suma números " + analyzer.getNumberSum(textarea.value);
   //longitud promedio palabras
-  lista[5].innerHTML = "promedio longitud " + analyzer.getAverageWordLength(result);
+  lista[5].innerHTML = "promedio longitud " + analyzer.getAverageWordLength(textarea.value);
 });
 
 //boton reset
