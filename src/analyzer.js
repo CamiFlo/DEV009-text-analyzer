@@ -40,15 +40,15 @@ const analyzer = {
     
   // isNaN o .replace ? expresión regular para buscarr numeros? No sirve para numeros negativos?
   getNumberCount: (text) => {
-    const numbers = text.match(/\d+/g); // Expresión regular para encontrar números
+    const numbers = text.match(/\b\d+(?:\.\d+)?\b/g); // Expresión regular para encontrar números
     if (numbers) {
-      return numbers.length;} 
-    else {
+      return numbers.length;
+    }else{
       return 0;
     }
+      
+
   },
-
-
 
 
   getNumberSum: (text) => {
@@ -56,7 +56,7 @@ const analyzer = {
     const count = analyzer.getNumberCount(text); // Llamada a la función getNumberCount() con su resultado
     let suma = 0;
     for (let i = 0; i < count; i++) {
-      const number = parseFloat(text.match(/\d+/g)[i]); // misma Exreg para encontrar numeros
+      const number = parseInt(text.match(/-?\d+(\.\d+)?/g)[i]); // misma Exreg para encontrar numeros
       suma += number;
     }   
     return suma.toFixed(2);
@@ -79,13 +79,12 @@ const analyzer = {
 
   getAverageWordLength: (text) =>  {
 
-    const words = text.split(" ");
-    const totalLength = words.reduce(function (acc, word) {    //length TH TH TH!!!
+    const words = text.split(" "); // Divide el texto en un array de palabras separadas por espacios
+    const totalLength = words.reduce(function (acc, word) { // Utilizar el método reduce para sumar las longitudes de todas las palabras
       return acc + word.length;
-    }, 0)
-    const averageLength = totalLength / words.length;
-    return Number(averageLength).toFixed(2);
-  //number(averageLength).toFixed(2);
+    }, 0);
+    const averageLength = totalLength / words.length; // sacar promedio dividiendo la suma de las longitudes por la cantidad de palabras
+    return Number(averageLength).toFixed(2); // Convierte el promedio en un número y lo redondea a 2 decimales utilizando toFixed()
   },
 
 }

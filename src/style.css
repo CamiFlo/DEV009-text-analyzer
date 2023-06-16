@@ -17,14 +17,30 @@ h1 {
     font-size: 40px;
 }
 
+h2{
+color: rgb(34, 33, 33);
+text-align-last: center;
+letter-spacing: 2px;
+font-family: Helvetica;
+line-height: 2;
+
+}
 
 .containerList {
-    display: grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(60px, auto);
   gap: 10px;
   list-style-type: none;
-  padding: 0;
+  padding: 12px;
+  border-radius: 15px;
+  font-size:  20px; 
+  border: 1px solid black;
+  background-color: rgb(216, 177, 238);
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
   
   }
   
@@ -35,6 +51,7 @@ h1 {
     justify-content: center;
     border: 1px solid black;
     padding: 10px;
+    font-size: 20px ;
     
   }
   
@@ -101,6 +118,7 @@ textarea[name="user-input"] {
     text-align: center;
     height: 400px;
     width: 600px;
+    border-radius: 15px;
 }
 
 #reset-button {
