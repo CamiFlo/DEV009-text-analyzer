@@ -54,12 +54,16 @@ const analyzer = {
   getNumberSum: (text) => {
 
     const count = analyzer.getNumberCount(text); // Llamada a la función getNumberCount() con su resultado
-    let suma = 0;
+    console.log(count);
+    let suma = 0; 
     for (let i = 0; i < count; i++) {
-      const number = parseInt(text.match(/-?\d+(\.\d+)?/g)[i]); // misma Exreg para encontrar numeros
+      const number = parseFloat(text.match(/-?\d+(\.\d+)?/g)[i]); // misma Exreg para encontrar numeros
+      console.log(number);
       suma += number;
     }   
-    return suma.toFixed(2);
+    
+    return Number(suma.toFixed(2));
+    
   
   },
   /*let suma = 0;
@@ -84,7 +88,7 @@ const analyzer = {
       return acc + word.length;
     }, 0);
     const averageLength = totalLength / words.length; // sacar promedio dividiendo la suma de las longitudes por la cantidad de palabras
-    return Number(averageLength).toFixed(2); // Convierte el promedio en un número y lo redondea a 2 decimales utilizando toFixed()
+    return Number(averageLength.toFixed(2)); // Convierte el promedio en un número y lo redondea a 2 decimales utilizando toFixed()
   },
 
 }
