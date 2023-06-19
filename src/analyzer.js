@@ -54,15 +54,13 @@ const analyzer = {
   getNumberSum: (text) => {
 
     const count = analyzer.getNumberCount(text); // Llamada a la función getNumberCount() con su resultado
-    console.log(count);
     let suma = 0; 
     for (let i = 0; i < count; i++) {
-      const number = parseFloat(text.match(/-?\d+(\.\d+)?/g)[i]); // misma Exreg para encontrar numeros
-      console.log(number);
+      const number = parseFloat(text.match(/-?\d+(\.\d+)?/g)[i]); // misma Exreg para encontrar numeros,parse float para sumar decimales
       suma += number;
     }   
     
-    return Number(suma.toFixed(2));
+    return Number(suma.toFixed(2)); //tofixed cambia valor a string, debe ir dentro de del parentesis
     
   
   },
