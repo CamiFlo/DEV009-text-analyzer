@@ -1,0 +1,137 @@
+header {
+    text-align: center;
+    font-family: fantasy;
+
+}
+body {
+    background-color: rgb(233, 190, 233);
+    font-family: Helvetica;
+    text-align: center;
+}
+
+
+h1 {
+    color: grey;
+    font-style: bold;
+    font-family: monospace;
+    font-size: 40px;
+}
+
+h2{
+color: rgb(34, 33, 33);
+text-align-last: center;
+letter-spacing: 2px;
+font-family: Helvetica;
+line-height: 2;
+
+}
+
+.containerList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+  gap: 10px;
+  list-style-type: none;
+  padding: 12px;
+  border-radius: 15px;
+  font-size:  20px; 
+  border: 1px solid black;
+  background-color: rgb(216, 177, 238);
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  
+  }
+  
+  .list list1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px ;
+    
+  }
+  
+  .list list2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  .list list3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  .list list4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  .list list5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  .list list6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .list label {
+    margin-bottom: 10px;
+  }
+  
+  .list button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+textarea[name="user-input"] {
+    background-color: rgb(rgb(132, 125, 125));
+    font-family: verdana;
+    text-align: center;
+    height: 400px;
+    width: 600px;
+    border-radius: 15px;
+}
+
+#reset-button {
+    background-color: black;
+    color: honeydew;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+
+footer {
+    text-align: right;
+}
