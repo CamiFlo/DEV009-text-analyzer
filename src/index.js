@@ -14,17 +14,17 @@ textarea.addEventListener('keyup', function () {
   //document.querySelector('.list1').innerHTML = "caracteres" + analyzer.getCharacterCount(result);
   //const wordCountElement = document.querySelector('.parrafo');
 
-  lista[0].innerHTML="caracteres "+ analyzer.getCharacterCount(textarea.value);
+  lista[0].innerHTML="caracteres  "+ analyzer.getCharacterCount(textarea.value);
   //caracteres sin espacio
-  lista[1].innerHTML = "caracteres sin espacio " + analyzer.getCharacterCountExcludingSpaces(textarea.value);
+  lista[1].innerHTML = "caracteres sin espacio  " + analyzer.getCharacterCountExcludingSpaces(textarea.value);
   //contador palabras
-  lista[2].innerHTML = "palabras " + analyzer.getWordCount(textarea.value);
+  lista[2].innerHTML = "palabras  " + analyzer.getWordCount(textarea.value);
   //contador numeros
-  lista[3].innerHTML = "números " + analyzer.getNumberCount(textarea.value);
+  lista[3].innerHTML = "números  " + analyzer.getNumberCount(textarea.value);
   //contador suma numeros
-  lista[4].innerHTML = "suma números " + analyzer.getNumberSum(textarea.value);
+  lista[4].innerHTML = "suma números  " + analyzer.getNumberSum(textarea.value);
   //longitud promedio palabras
-  lista[5].innerHTML = "promedio longitud " + analyzer.getAverageWordLength(textarea.value);
+  lista[5].innerHTML = "promedio longitud  " + analyzer.getAverageWordLength(textarea.value);
 });
 
 //boton reset

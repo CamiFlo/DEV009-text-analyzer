@@ -19,7 +19,7 @@ h1 {
 
 h2{
 color: rgb(34, 33, 33);
-text-align-last: center;
+text-align: center;
 letter-spacing: 2px;
 font-family: Helvetica;
 line-height: 2;
@@ -35,74 +35,40 @@ line-height: 2;
   padding: 12px;
   border-radius: 15px;
   font-size:  20px; 
-  border: 1px solid black;
+  border: 1px solid rgb(168, 167, 167);
   background-color: rgb(216, 177, 238);
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  padding-top: 20px;
+  padding-right: 20px; 
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-top: 20px;
   
-  }
-  
-  .list list1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    padding: 10px;
-    font-size: 20px ;
-    
-  }
-  
-  .list list2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    padding: 10px;
-  }
+}
 
-  .list list3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    padding: 10px;
-  }
+.list1,
+.list2,
+.list3,
+.list4,
+.list5,
+.list6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px dotted rgb(76, 73, 73);
+  padding: 10px;
+  padding-top: 10px;
+  padding-right: 20px; 
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  color: darkslateblue;
+  width: 65%;
+  margin: 20px;
+  border-radius: 15px;
+  box-sizing: content-box;
 
-  .list list4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    padding: 10px;
-  }
+}
 
-  .list list5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    padding: 10px;
-  }
-
-  .list list6 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    padding: 10px;
-  }
-  .list label {
-    margin-bottom: 10px;
-  }
-  
   .list button {
     background-color: black;
     color: white;
@@ -117,14 +83,14 @@ textarea[name="user-input"] {
     font-family: verdana;
     text-align: center;
     height: 400px;
-    width: 600px;
+    width: 1000px;
     border-radius: 15px;
 }
 
 #reset-button {
-    background-color: black;
+    background-color: rgb(92, 92, 92);
     color: honeydew;
-    width: 60px;
+    width: 80px;
     height: 40px;
     text-align: center;
     border-radius: 10px;
