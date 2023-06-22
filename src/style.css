@@ -3,6 +3,7 @@ header {
     font-family: fantasy;
 
 }
+
 body {
     background-color: rgb(233, 190, 233);
     font-family: Helvetica;
@@ -17,69 +18,56 @@ h1 {
     font-size: 40px;
 }
 
-h2{
-color: rgb(34, 33, 33);
-text-align: center;
-letter-spacing: 2px;
-font-family: Helvetica;
-line-height: 2;
+h2 {
+    color: rgb(34, 33, 33);
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: Helvetica;
+    line-height: 2;
 
 }
 
 .containerList {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(60px, auto);
-  gap: 10px;
-  list-style-type: none;
-  padding: 12px;
-  border-radius: 15px;
-  font-size:  20px; 
-  border: 1px solid rgb(168, 167, 167);
-  background-color: rgb(216, 177, 238);
-  padding-top: 20px;
-  padding-right: 20px; 
-  padding-bottom: 20px;
-  padding-left: 20px;
-  margin-top: 20px;
-  
-}
-
-.list1,
-.list2,
-.list3,
-.list4,
-.list5,
-.list6 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px dotted rgb(76, 73, 73);
-  padding: 10px;
-  padding-top: 10px;
-  padding-right: 20px; 
-  padding-bottom: 10px;
-  padding-left: 20px;
-  font-size: 20px;
-  color: darkslateblue;
-  width: 65%;
-  margin: 20px;
-  border-radius: 15px;
-  box-sizing: content-box;
-
-}
-
-  .list button {
-    background-color: black;
-    color: white;
-    padding: 5px 10px;
-    border: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+    gap: 10px;
+    list-style-type: none;
+    padding: 12px;
     border-radius: 15px;
-    cursor: pointer;
-  }
+    font-size: 20px;
+    border: 1px solid rgb(168, 167, 167);
+    background-color: rgb(216, 177, 238);
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+
+}
+
+.list {
+    box-sizing: border-box;
+    margin: 20px;
+    border: 1px dotted rgb(76, 73, 73);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: darkslateblue;
+    width: 65%;
+    height: auto;
+    border-radius: 15px;
+
+}
+
 
 textarea[name="user-input"] {
-    background-color: rgb(rgb(132, 125, 125));
+    background-color: rgb(208, 210, 210);
     font-family: verdana;
     text-align: center;
     height: 400px;
