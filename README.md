@@ -1,53 +1,38 @@
 # Analizador de texto
 
-## Índice
+# Presentación
+Text analyzer, es una página web simple, con un objetivo simple: 
+entregar métricas de textos, para personas que crean y desarrollan documentos,
+y que necesitan monitorear ciertos requerimientos en su entrega.
 
-* [1. Consideraciones generales](#1-consideraciones-generales)
-* [2. Preámbulo](#2-preámbulo)
-* [3. Funcionalidades](#3-funcionalidades)
-* [4. Boilerplate](#4-boilerplate)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Pruebas](#6-pruebas)
-* [7. Pistas, tips y lecturas complementarias](#7-pistas-tips-y-lecturas-complementarias)
-* [8. Consideraciones para pedir tu Project Feedback](#8-consideraciones-para-pedir-tu-project-feedback)
-* [9. Objetivos de aprendizaje](#9-objetivos-de-aprendizaje)
-* [10. Funcionalidades opcionales](#10-funcionalidades-opcionales)
+# Caracteristicas
+El objetivo es entregar 6 parámetros cuando la usuaria ingresa el texto:
+* Cantidad de caracteres: donde se considera cada caracter, incluido los espacios
+* Cantidad de caracteres sin espacio: un resumen de solo los caracteres (números, letras y caracteres especiales)
+* Cantidad de palabras: entrega la cantidad de palabras, ideal para personas que tienen una restricción mínima o máxima de caracteres.
+* Cantidad de números: se analiza la cantidad de números que están escritos en el documento
+* Suma de  números: entrega la suma de cada número encontrado en el documento
+* Longitud de palabras: entrega un promedio de la longitud de palabras escritas.
 
 ***
 
-## 1. Consideraciones generales
+## Aprendizajes
+* Siempre regresar readme: al volver a leerlo siempre aparecía nueva información que había pasado por alto.
+* Hice un boceto de baja fidelidad que me sirvió de guia
 
-* Este proyecto lo resolvemos de manera **individual**.
-* El rango de tiempo estimado para completar el proyecto es de 1 a 3 Sprints.
-* Enfócate en aprender y no solamente en "completar" el proyecto.
-* Te sugerimos que no intentes saberlo todo antes de empezar a codear.
-  No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
-  Irás aprendiendo.
+![Una lupa sobre texto de libro](https://github.com/CamiFlo/DEV009-text-analyzer/blob/main/boceto%20baja.png)
 
-## 2. Preámbulo
+* Me familiaricé con Visual Studio Code, Git y Git Hub, y sus interacciones para control de versiones.
+* En este proyecto pude estructurar el HTML y relacionarlo con CSS.
+* Pude ir resolviendo paso a paso las funciones
+* Poder ver el trabajo de mis compañeras fue una manera nueva de aprender.
+* Los test también entregaban información valiosa para que afinando las funciones.
+* Internet es un aliado poderoso, pero hay que limitar la búsqueda y no evitar la práctica: aprender haciendo.
 
-![Una lupa sobre texto de libro](https://github.com/Laboratoria/bootcamp/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113)
 
-_Credito: Foto de [ethan](https://unsplash.com/fr/@andallthings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-_en [Unsplash](https://unsplash.com/es/fotos/72NpWZJOskU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
+## Contacto
+Este proyecto sigue en proceso! cualquier aporte,o contribución es bienvenido, escribeme a camila.flores.j@gmail.com
 
-Un analizador de texto es una aplicación para extraer información útil de un
-texto utilizando diversas técnicas, como el procesamiento del lenguaje
-natural (NLP), el aprendizaje automático (ML) y el análisis estadístico.
-Estas aplicaciones pueden proporcionar una variedad de métricas que brindan
-información básica sobre la longitud y la estructura del texto como por
-ejemplo, el conteo de palabras, el conteo de caracteres, el conteo de
-oraciones y el conteo de párrafos. Otras métricas incluyen el análisis
-de sentimientos, que utiliza técnicas de NLP para determinar el tono
-general positivo, negativo o neutral del texto, y el análisis de
-legibilidad, que utiliza algoritmos para evaluar la complejidad y la
-legibilidad del texto.
-
-En general, las aplicaciones de análisis de texto brindan información
-valiosa y métricas sobre los textos que pueden ayudar a los usuarios a
-tomar decisiones informadas y sacar conclusiones significativas.
-Mediante el uso de estas herramientas de análisis, los usuarios pueden
-obtener una comprensión más profunda de los textos.
 
 ## 3. Funcionalidades
 
